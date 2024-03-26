@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Order Summary</h1>
+    <p id="orderDetails"></p>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Retrieve the total price from localStorage and display it
+            const totalPrice = localStorage.getItem('smoothieTotalPrice');
+            document.getElementById('orderDetails').textContent = `Your total is: $${totalPrice}`;
+        });
+    </script>
+</body>
+</html>
