@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smoothie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Order Your Favorite Smoothie</h1>
+    <form id="smoothieForm">
+        <!-- Smoothie Flavours -->
+        <label for="flavour">Choose your smoothie flavour:</label>
+        <select id="flavour" name="flavour">
+            <option value="Tropical" data-price="5">Tropical - $5</option>
+            <option value="Berry Blast" data-price="5.5">Berry Blast - $5.50</option>
+            <option value="Green Goddess" data-price="6">Green Goddess - $6</option>
+            <option value="Mango Madness" data-price="5.5">Mango Madness - $5.50</option>
+        </select>
+
+        <!-- Fruits -->
+        <div>
+            <label>Fruits ($0.50 each):</label>
+            <input type="checkbox" name="fruit" value="Banana" data-price="0.5"> Banana
+            <input type="checkbox" name="fruit" value="Strawberry" data-price="0.5"> Strawberry
+            <input type="checkbox" name="fruit" value="mango" data-price="0.5"> mango
+            <input type="checkbox" name="fruit" value="grapes" data-price="0.5"> grapes
+            <input type="checkbox" name="fruit" value="orange" data-price="0.5"> orange
+
+        </div>
+
+        <!-- Fruit Chunks -->
+        <div>
+            <label>Fruit Chunks ($1.00 each):</label>
+            <input type="checkbox" name="chunks" value="Pineapple Chunks" data-price="1"> Pineapple Chunks
+            <input type="checkbox" name="chunks" value="Mango Chunks" data-price="1"> Mango Chunks
+            <input type="checkbox" name="chunks" value="Berry Mix" data-price="1"> Berry Mix
+            
+        </div>
+
+        <!-- Cup Size -->
+        <div>
+            <label>Cup Size:</label>
+            <input type="radio" name="size" value="Small" data-price="0"> Small
+            <input type="radio" name="size" value="Medium" data-price="1"> Medium - $1 Extra
+            <input type="radio" name="size" value="Large" data-price="2"> Large - $2 Extra
+        </div>
+
+        <button type="submit">Place Order</button>
+    </form>
+</body>
+</html>
